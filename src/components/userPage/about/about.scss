@@ -1,0 +1,16 @@
+.about {
+  // position: absolute;
+  // top: 20px;
+  // left: 30%;
+  color: white;
+  font-size: 22px;
+  &__bio {
+    margin-top: 20px;
+  }
+  &__social {
+    margin-top: 50px;
+    &-posts {
+      margin-left: 150px;
+    }
+  }
+}

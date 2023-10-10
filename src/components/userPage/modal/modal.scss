@@ -1,0 +1,90 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  &__window {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    background-color: rgb(242, 234, 234);
+  }
+  &__title {
+    text-align: center;
+  }
+  &__close {
+    position: absolute;
+    font-size: 45px;
+    top: -5px;
+    right: 5px;
+    cursor: pointer;
+  }
+  &__form {
+    margin-top: 20px;
+  }
+  &__input {
+    display: block;
+    margin: 5px auto 20px auto;
+    padding-left: 5px;
+    border: 1px solid rgb(116, 108, 108);
+    border-radius: 10px;
+    width: 350px;
+    height: 42px;
+    font-size: 18px;
+    &:focus {
+      border-color: #007bff; /* Цвет бордера при фокусировке */
+      outline: none; /* Убрать стандартный контур при фокусировке */
+      box-shadow: 0 4px 6px rgba(0, 123, 255, 0.1);
+    }
+  }
+  &__label {
+    margin-left: 16%;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  &__text {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 70%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    // resize: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    &:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0 4px 6px rgba(0, 123, 255, 0.1);
+    }
+  }
+  &__btn {
+    display: block;
+    margin: 30px auto 0 auto;
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    /* Дополнительные стили при наведении */
+    &:hover {
+      background-color: #0056b3; /* Новый цвет фона при наведении */
+    }
+  }
+  & .errors__message {
+    margin-left: 80px;
+  }
+}
